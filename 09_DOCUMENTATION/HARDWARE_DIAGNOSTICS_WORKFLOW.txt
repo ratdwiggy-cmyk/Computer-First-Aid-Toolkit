@@ -1,0 +1,91 @@
+HARDWARE DIAGNOSTICS — SAFE WORKFLOW
+====================================
+
+PURPOSE
+-------
+Identify hardware problems without unnecessarily changing the
+computer.
+
+DEFAULT APPROACH
+----------------
+Use READ-ONLY inspection first.
+
+CHECK:
+------
+1. Computer model
+2. CPU
+3. RAM capacity and configuration
+4. Storage devices
+5. Storage health where available
+6. GPU/display hardware
+7. Network adapters
+8. USB devices
+9. Battery information on laptops
+10. Temperatures/sensors when reliably available
+
+IMPORTANT
+---------
+A software reading is evidence, not proof.
+
+For example:
+- High CPU usage does not automatically mean a bad CPU.
+- Low available RAM does not automatically mean defective RAM.
+- A SMART warning should be taken seriously but interpreted in context.
+- High temperature readings should be checked against the hardware model
+  and workload.
+
+STORAGE
+-------
+Identify the PHYSICAL DRIVE before taking any repair action.
+
+Never assume:
+C: = physical disk 0
+D: = physical disk 1
+
+Drive letters are not reliable physical-disk identifiers.
+
+MEMORY
+------
+If RAM appears faulty, preserve important data before extensive testing.
+
+CPU
+---
+Check utilization, clock behavior, processor model and system stability.
+
+GPU
+---
+Identify the GPU and check for driver/device errors before changing
+drivers.
+
+BATTERY
+--------
+On laptops, inspect battery condition and capacity where the operating
+system provides reliable information.
+
+TEMPERATURE
+-----------
+Use available hardware sensor information carefully.
+
+Do not install random temperature/driver/optimizer utilities.
+
+DRIVERS
+-------
+Do not automatically install or update drivers simply because a device
+is listed.
+
+Identify the device and problem first.
+
+REPAIR
+------
+Hardware diagnosis should normally follow:
+
+OBSERVE -> RECORD -> CONFIRM -> REPAIR
+
+Do not replace hardware or change firmware/BIOS settings based solely
+on an unexplained warning.
+
+WHEN IN DOUBT
+-------------
+STOP.
+
+Record what the computer reports before making changes.

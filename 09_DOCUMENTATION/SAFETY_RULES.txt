@@ -1,0 +1,119 @@
+COMPUTER TOOLKIT — SAFETY RULES
+================================
+
+PURPOSE
+-------
+This toolkit is for legitimate computer assistance, diagnosis,
+data preservation, recovery, and repair.
+
+GOLDEN RULE
+-----------
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> REPAIR
+
+DEFAULT MODE
+------------
+When helping someone, begin with READ-ONLY inspection.
+Do not change their computer simply because a tool offers the option.
+
+BEFORE TOUCHING A COMPUTER
+---------------------------
+1. Ask the owner for permission.
+2. Ask what they want fixed/recovered.
+3. Ask whether important files are already backed up.
+4. Identify the operating system.
+5. Identify the computer's internal drives.
+6. Do not assume which drive contains important data.
+
+GREEN — GENERALLY SAFE
+----------------------
+System information
+Hardware identification
+Disk/SMART inspection
+Network diagnosis
+Reading logs
+Viewing processes
+Viewing startup entries
+Copying important files to a separate destination
+
+YELLOW — STOP AND CONFIRM
+-------------------------
+Changing network settings
+Changing startup configuration
+Running filesystem repair
+Changing permissions
+Changing boot configuration
+Installing software
+Mounting unfamiliar encrypted filesystems
+Recovering deleted files
+
+RED — DO NOT USE CASUALLY
+-------------------------
+Formatting a drive
+Deleting partitions
+Changing partition tables
+Overwriting a disk
+Resetting passwords
+Bypassing security controls
+Disabling security software
+Removing encryption
+Reinstalling an operating system
+Using a recovery tool without identifying the source
+and destination drives
+
+DATA RECOVERY RULE
+------------------
+If important data may be at risk, preserve/copy the data BEFORE
+attempting repairs whenever practical.
+
+FAILING DRIVE RULE
+------------------
+If a drive is physically failing or producing I/O errors,
+do not repeatedly run filesystem repair tools against it.
+Use an appropriate imaging/recovery procedure instead.
+
+USB SAFETY
+----------
+NEVER format this USB just because Windows asks.
+NEVER delete or rename the Linux Mint boot files.
+NEVER use this USB itself as the destination for a whole-disk
+recovery operation unless that destination has been deliberately
+identified and sufficient space has been confirmed.
+
+PUBLIC/OTHER PEOPLE'S COMPUTERS
+--------------------------------
+Respect the owner's files, privacy, security software, policies,
+and organizational controls.
+
+Do not bypass passwords, BitLocker, administrator restrictions,
+BIOS/UEFI restrictions, endpoint security, network restrictions,
+or other access controls.
+
+Do not install software without permission.
+
+Do not copy someone's private files unless they specifically
+authorize the recovery/copy operation.
+
+When finished, remove personal files and sign out of accounts.
+
+POWERFUL TOOLS
+--------------
+Some tools in this kit can permanently change data.
+A tool being available does NOT mean it should be used.
+
+If you cannot clearly identify:
+- the computer being worked on,
+- the source drive,
+- the destination drive,
+- what the operation will change,
+
+STOP before proceeding.
+
+WHEN IN DOUBT
+-------------
+STOP.
+Do not guess.
+Record what you see and seek further information before making
+a change.
+
+This toolkit is designed to help preserve computers, not take
+control of them.

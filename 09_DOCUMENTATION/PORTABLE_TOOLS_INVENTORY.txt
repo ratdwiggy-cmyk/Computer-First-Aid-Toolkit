@@ -1,0 +1,222 @@
+﻿============================================================
+COMPUTER TOOLKIT — PORTABLE TOOLS INVENTORY
+============================================================
+
+PURPOSE
+-------
+This directory contains portable diagnostic and recovery tools.
+
+IMPORTANT
+---------
+A tool being present does NOT mean it should be used automatically.
+
+Always follow:
+
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> REPAIR
+
+============================================================
+MICROSOFT SYSINTERNALS
+============================================================
+
+Location:
+08_PORTABLE_TOOLS\SYSINTERNALS
+
+Official Microsoft Sysinternals utilities.
+
+GREEN — INITIAL DIAGNOSTIC USE
+------------------------------
+
+Process Explorer
+File:
+procexp64.exe
+
+Purpose:
+Inspect running processes, CPU usage, memory usage, handles,
+services, and process relationships.
+
+Autoruns
+File:
+Autoruns64.exe
+
+Purpose:
+Inspect programs and components configured to start automatically.
+
+Process Monitor
+File:
+Procmon64.exe
+
+Purpose:
+Detailed observation of filesystem, Registry, process, and
+network-related activity.
+
+TCPView
+File:
+tcpview64.exe
+
+Purpose:
+Inspect active TCP/UDP network connections and the processes
+using them.
+
+RAMMap
+File:
+RAMMap64.exe
+
+Purpose:
+Inspect detailed Windows physical-memory usage.
+
+Sigcheck
+File:
+sigcheck64.exe
+
+Purpose:
+Inspect file version, signature, and related executable information.
+
+============================================================
+RESTRICTED SYSINTERNALS
+============================================================
+
+Some Sysinternals programs can make significant changes or have
+powerful administrative/security implications.
+
+These tools have been physically separated from the normal
+diagnostic tools.
+
+Location:
+
+08_PORTABLE_TOOLS\SYSINTERNALS\RESTRICTED
+
+Currently isolated:
+
+PsExec.exe
+PsExec64.exe
+PsPasswd.exe
+PsPasswd64.exe
+SDelete.exe
+SDelete64.exe
+Volumeid.exe
+Volumeid64.exe
+Sysmon.exe
+Sysmon64.exe
+NotMyFault.exe
+NotMyFault64.exe
+NotMyFaultC.exe
+NotMyFaultC64.exe
+
+STATUS:
+
+RESTRICTED / ADVANCED
+
+These tools are NOT available through the normal Sysinternals
+diagnostic launcher.
+
+Do NOT use these casually.
+
+Do not use tools to bypass passwords, security controls,
+administrator restrictions, or organizational policies.
+
+Do not delete, move, or execute a restricted tool without first
+understanding exactly what it does and obtaining appropriate
+permission.
+
+============================================================
+FILE RECOVERY
+============================================================
+
+Location:
+
+04_FILE_RECOVERY\TESTDISK_PHOTOREC\testdisk-7.3-WIP
+
+Programs:
+
+testdisk_win.exe
+photorec_win.exe
+qphotorec_win.exe
+fidentify_win.exe
+
+Purpose:
+
+Partition/file recovery and file identification.
+
+SAFETY:
+
+TestDisk can modify disk structures.
+
+Treat modification operations as RED.
+
+PhotoRec recovery output MUST go to a separate destination.
+
+Do not recover files onto the source drive.
+
+The current package is labeled 7.3-WIP.
+
+============================================================
+GNU DDRESCUE
+============================================================
+
+Purpose:
+
+Advanced recovery/imaging of drives with read errors or physical
+instability.
+
+STATUS:
+
+ADVANCED / RESTRICTED
+
+Use only when the source and destination drives are positively
+identified.
+
+A destination can be overwritten.
+
+Do not casually use ddrescue on a mounted read/write source.
+
+If a drive is failing, consider imaging before filesystem repair.
+
+============================================================
+TOOLS NOT INCLUDED
+============================================================
+
+This toolkit intentionally avoids:
+
+- random driver-updater programs
+- registry cleaners
+- "PC optimizer" programs
+- password bypass tools
+- security bypass tools
+- pirated software
+- bundled freeware with unwanted extras
+- unnecessary browser extensions
+- questionable malware-removal utilities
+- tools that require an account when one is not necessary
+
+============================================================
+TOOL SELECTION STANDARD
+============================================================
+
+A tool should generally be:
+
+FREE
+REPUTABLE
+MAINTAINED
+APPROPRIATELY LICENSED
+PORTABLE WHEN PRACTICAL
+FROM AN OFFICIAL SOURCE
+CLEAR ABOUT WHAT IT CHANGES
+
+Tools that can destroy or modify data must be clearly identified.
+
+============================================================
+WHEN IN DOUBT
+============================================================
+
+Do not run the tool just because it is available.
+
+First determine:
+
+WHAT DOES IT DO?
+WHAT WILL IT CHANGE?
+WHAT IS THE SOURCE?
+WHAT IS THE DESTINATION?
+DO WE HAVE PERMISSION?
+
+============================================================
+

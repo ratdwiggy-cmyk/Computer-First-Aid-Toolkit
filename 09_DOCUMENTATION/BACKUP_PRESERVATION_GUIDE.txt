@@ -1,0 +1,180 @@
+============================================================
+COMPUTER TOOLKIT — BACKUP & DATA PRESERVATION GUIDE
+============================================================
+
+PURPOSE
+-------
+Protect important data before troubleshooting, repair, recovery,
+or other potentially risky operations.
+
+CORE RULE
+---------
+PRESERVE FIRST -> REPAIR SECOND
+
+============================================================
+BEFORE MAKING CHANGES
+============================================================
+
+Ask:
+
+1. What problem are we trying to solve?
+2. Which files are important?
+3. Are those files already backed up?
+4. Where should the backup be stored?
+5. Does the destination have enough free space?
+6. Does the owner authorize access to the files?
+
+Do not assume that a backup exists.
+
+============================================================
+WHAT TO PRIORITIZE
+============================================================
+
+When time or storage is limited, prioritize:
+
+- Documents
+- Photos
+- Videos
+- Work/school files
+- Financial records
+- Important personal files
+- Application data that the owner specifically identifies
+
+Do not blindly copy an entire drive when a targeted backup is
+safer and more practical.
+
+============================================================
+SOURCE AND DESTINATION
+============================================================
+
+SOURCE:
+The computer's original files.
+
+DESTINATION:
+A separate storage device or approved backup location.
+
+ALWAYS identify both before copying.
+
+Do not use the potentially failing source drive as the backup
+destination.
+
+Do not overwrite an existing backup unless the owner understands
+what will happen.
+
+============================================================
+SAFE BACKUP PROCESS
+============================================================
+
+1. Identify the source.
+2. Identify the destination.
+3. Check available destination space.
+4. Create a clearly named backup folder.
+5. Copy important files.
+6. Confirm the copy completed.
+7. Open several important files from the backup.
+8. Keep the original files intact until verification is complete.
+
+============================================================
+IF THE SOURCE DRIVE IS FAILING
+============================================================
+
+If there are signs of physical drive failure:
+
+STOP unnecessary use.
+
+Do not repeatedly browse or copy files from the drive without
+considering the condition of the hardware.
+
+For a failing drive, an appropriate imaging procedure may be
+preferable to ordinary file copying.
+
+Advanced recovery tools should be used only when the source and
+destination are clearly identified.
+
+============================================================
+BACKUP VERIFICATION
+============================================================
+
+A backup is not considered trustworthy merely because files
+were copied.
+
+Verify:
+
+- expected folders exist
+- important files open
+- file sizes appear reasonable
+- photos display correctly
+- videos can play
+- documents can open
+- the destination remains accessible
+
+For especially important data, maintain more than one copy.
+
+============================================================
+PRIVACY
+============================================================
+
+Backups can contain extremely sensitive information.
+
+Before creating a backup:
+
+- obtain authorization
+- use an appropriate destination
+- avoid unnecessary files
+- do not upload private files to an unknown service
+- do not leave temporary copies behind
+
+When finished helping someone:
+
+- remove temporary working copies when appropriate
+- return the computer to its prior state where practical
+- do not retain another person's files
+
+============================================================
+THIS USB
+============================================================
+
+STORAGE_HUB is general-purpose storage.
+
+Do not assume it is an appropriate destination for every backup.
+
+Before using it as a backup destination:
+
+1. Confirm the owner authorizes the copy.
+2. Confirm sufficient free space.
+3. Confirm the correct destination folder.
+4. Confirm the USB itself is not the failing source.
+5. Remember that a flash drive should not be treated as the only
+   copy of important data.
+
+============================================================
+DO NOT
+============================================================
+
+Do NOT:
+
+- delete the source after copying
+- move files when you intended to copy them
+- format the destination
+- overwrite an existing backup without confirmation
+- save recovered files onto a failing source drive
+- copy private data without authorization
+- assume a successful copy means the backup is verified
+
+============================================================
+WHEN IN DOUBT
+============================================================
+
+STOP.
+
+Identify:
+
+SOURCE
+DESTINATION
+IMPORTANT DATA
+AVAILABLE SPACE
+AUTHORIZED ACTION
+
+Then proceed deliberately.
+
+============================================================

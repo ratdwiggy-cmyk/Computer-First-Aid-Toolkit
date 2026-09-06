@@ -1,0 +1,192 @@
+============================================================
+COMPUTER TOOLKIT — ADVANCED TOOLS
+============================================================
+
+IMPORTANT
+---------
+These tools are intentionally NOT part of the normal safe launcher.
+
+They can modify disks, recover deleted data, inspect deeply,
+or otherwise perform operations that require deliberate decisions.
+
+CORE RULE
+---------
+STOP -> IDENTIFY -> PRESERVE -> CONFIRM -> ACT
+
+============================================================
+TESTDISK / PHOTOREC
+============================================================
+
+Location:
+
+04_FILE_RECOVERY\TESTDISK_PHOTOREC\testdisk-7.3-WIP
+
+TESTDISK
+--------
+Use for advanced partition and filesystem recovery.
+
+Risk:
+RED for operations that modify partition or filesystem structures.
+
+Before using:
+- identify the physical source disk
+- identify the recovery destination
+- preserve important data where practical
+- understand exactly what the selected operation changes
+
+PHOTOREC
+--------
+Use for file recovery when appropriate.
+
+Risk:
+YELLOW/RED depending on operation and situation.
+
+Recovered files MUST be written to a separate destination.
+
+Never write recovered files back to the source being recovered.
+
+============================================================
+GNU DDRESCUE
+============================================================
+
+Purpose:
+
+Create a recovery image from a drive that may have read errors
+or physical instability.
+
+Risk:
+
+RED / ADVANCED
+
+Use only when the source and destination are positively identified.
+
+IMPORTANT:
+
+A destination can be overwritten.
+
+Do not casually run imaging commands against an uncertain disk.
+
+If the source is mounted read/write, stop and establish an
+appropriate recovery procedure first.
+
+A mapfile should normally be used so an interrupted rescue can
+continue without unnecessarily repeating work.
+
+============================================================
+MICROSOFT SYSINTERNALS
+============================================================
+
+Location:
+
+08_PORTABLE_TOOLS\SYSINTERNALS
+
+SAFE INITIAL TOOLS:
+
+Process Explorer
+Autoruns
+Process Monitor
+TCPView
+RAMMap
+Sigcheck
+
+These are primarily observation/diagnostic tools.
+
+============================================================
+RESTRICTED SYSINTERNALS
+============================================================
+
+Examples:
+
+PsExec
+PsPasswd
+SDelete
+Volumeid
+NotMyFault
+Sysmon
+
+Do not use these casually.
+
+Never use them to bypass:
+- passwords
+- administrator restrictions
+- endpoint security
+- organizational controls
+- other access restrictions
+
+============================================================
+GParted
+============================================================
+
+GParted is a powerful partition-management tool.
+
+Risk:
+
+RED
+
+It can:
+- create partitions
+- delete partitions
+- resize partitions
+- move partitions
+- change filesystem structures
+
+Never use it simply because a partition "looks wrong."
+
+Preserve important data first.
+
+============================================================
+WINDOWS REPAIR
+============================================================
+
+The following operations can modify Windows:
+
+DISM /Online /Cleanup-Image /RestoreHealth
+
+sfc /scannow
+
+They are NOT part of the initial diagnostic launcher.
+
+Use only after:
+
+1. Important data has been preserved where appropriate.
+2. The problem has been identified.
+3. The repair is justified.
+4. The owner has authorized the repair.
+
+============================================================
+ADVANCED-TOOL CHECKLIST
+============================================================
+
+Before using an advanced tool, answer ALL of these:
+
+[ ] Do I have permission?
+[ ] What problem am I solving?
+[ ] What is the physical source?
+[ ] What is the destination?
+[ ] Is important data preserved?
+[ ] What exactly will this operation change?
+[ ] Can the operation be reversed?
+[ ] Is there a safer read-only alternative?
+[ ] Have I recorded the current condition?
+
+If any answer is NO or UNKNOWN:
+
+STOP.
+
+============================================================
+THIS TOOLKIT'S PHILOSOPHY
+============================================================
+
+Powerful tools belong in the toolkit because they may be needed.
+
+That does NOT mean they belong in the first step.
+
+The normal workflow remains:
+
+OBSERVE
+PRESERVE
+DIAGNOSE
+CONFIRM
+REPAIR
+
+============================================================

@@ -1,0 +1,404 @@
+============================================================
+COMPUTER TOOLKIT — INCIDENT WORKSHEET
+============================================================
+
+PURPOSE
+-------
+Use one copy of this worksheet for each computer being diagnosed,
+repaired, or used for data recovery.
+
+CORE RULE
+---------
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> REPAIR
+
+============================================================
+1. BASIC INFORMATION
+============================================================
+
+Date:
+Time started:
+
+Computer owner / organization:
+
+Technician / helper:
+
+Permission to inspect:
+[ ] Yes
+[ ] No
+
+Permission to make changes:
+[ ] Yes
+[ ] No
+[ ] Limited — describe below
+
+============================================================
+2. REPORTED PROBLEM
+============================================================
+
+What does the owner say is wrong?
+
+____________________________________________________________
+
+____________________________________________________________
+
+When did the problem begin?
+
+____________________________________________________________
+
+What happened immediately before the problem?
+
+____________________________________________________________
+
+Any recent:
+[ ] Updates
+[ ] New software
+[ ] Hardware changes
+[ ] Power loss
+[ ] Physical damage
+[ ] Malware/security concern
+[ ] Unknown
+
+============================================================
+3. DATA PRIORITY
+============================================================
+
+Are important files involved?
+
+[ ] No
+[ ] Yes
+[ ] Unknown
+
+Is there a known backup?
+
+[ ] Yes
+[ ] No
+[ ] Unknown
+
+Important files/folders identified:
+
+____________________________________________________________
+
+____________________________________________________________
+
+Backup destination:
+
+____________________________________________________________
+
+============================================================
+4. COMPUTER IDENTIFICATION
+============================================================
+
+Operating system:
+
+Computer manufacturer:
+
+Computer model:
+
+CPU:
+
+RAM:
+
+Internal storage:
+
+External storage:
+
+GPU:
+
+Network adapter:
+
+============================================================
+5. PHYSICAL DISK IDENTIFICATION
+============================================================
+
+IMPORTANT:
+Do not rely on drive letters alone.
+
+SOURCE DISK:
+
+Disk number:
+Model:
+Serial:
+Capacity:
+
+DESTINATION DISK:
+
+Disk number:
+Model:
+Serial:
+Capacity:
+
+Confirm source and destination are different:
+
+[ ] Confirmed
+[ ] Not applicable
+[ ] UNKNOWN — STOP
+
+============================================================
+6. INITIAL DIAGNOSTICS
+============================================================
+
+System information:
+[ ] Completed
+[ ] Not completed
+
+Storage health:
+[ ] Completed
+[ ] Not completed
+
+Memory:
+[ ] Completed
+[ ] Not completed
+
+GPU:
+[ ] Completed
+[ ] Not completed
+
+Network:
+[ ] Completed
+[ ] Not completed
+
+Battery:
+[ ] Completed
+[ ] Not completed
+[ ] Not applicable
+
+Device errors:
+[ ] Completed
+[ ] Not completed
+
+Windows repair assessment:
+[ ] Completed
+[ ] Not completed
+
+Security assessment:
+[ ] Completed
+[ ] Not completed
+
+============================================================
+7. OBSERVATIONS
+============================================================
+
+What was observed?
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+Unexpected warnings/errors:
+
+____________________________________________________________
+
+____________________________________________________________
+
+============================================================
+8. DATA PRESERVATION
+============================================================
+
+Was data preserved before repair?
+
+[ ] Yes
+[ ] No
+[ ] Not necessary
+[ ] Unknown
+
+Backup performed?
+
+[ ] Yes
+[ ] No
+
+Backup verified?
+
+[ ] Yes
+[ ] No
+[ ] Not applicable
+
+Recovery imaging considered?
+
+[ ] Yes
+[ ] No
+[ ] Not applicable
+
+============================================================
+9. DIAGNOSIS
+============================================================
+
+Most likely problem:
+
+____________________________________________________________
+
+Evidence supporting the diagnosis:
+
+____________________________________________________________
+
+____________________________________________________________
+
+Confidence:
+
+[ ] High
+[ ] Medium
+[ ] Low
+[ ] Unknown
+
+============================================================
+10. PROPOSED ACTION
+============================================================
+
+What action is being considered?
+
+____________________________________________________________
+
+What will the action change?
+
+____________________________________________________________
+
+Can the action be reversed?
+
+[ ] Yes
+[ ] No
+[ ] Unknown
+
+Owner authorization:
+
+[ ] Approved
+[ ] Not approved
+[ ] Not yet requested
+
+============================================================
+11. CHANGES MADE
+============================================================
+
+Record EVERY change.
+
+Time:
+Change:
+Reason:
+Result:
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+============================================================
+12. RECOVERY INFORMATION
+============================================================
+
+If data recovery was performed:
+
+Source disk:
+
+Destination disk:
+
+Recovery tool:
+
+Operation performed:
+
+Files recovered:
+
+____________________________________________________________
+
+Recovery verified:
+
+[ ] Yes
+[ ] No
+[ ] Partially
+
+============================================================
+13. FINAL CONDITION
+============================================================
+
+Problem resolved?
+
+[ ] Yes
+[ ] No
+[ ] Partially
+[ ] Unknown
+
+Computer boots normally?
+
+[ ] Yes
+[ ] No
+[ ] Not applicable
+
+Important files accessible?
+
+[ ] Yes
+[ ] No
+[ ] Partially
+[ ] Unknown
+
+Remaining problems:
+
+____________________________________________________________
+
+____________________________________________________________
+
+============================================================
+14. HANDOFF
+============================================================
+
+Explain to owner:
+
+[ ] What was found
+[ ] What was changed
+[ ] What remains unresolved
+[ ] Where recovered/backup data was stored
+[ ] Any recommended next steps
+
+Temporary files removed where appropriate:
+
+[ ] Yes
+[ ] No
+[ ] Not applicable
+
+Accounts signed out where appropriate:
+
+[ ] Yes
+[ ] No
+[ ] Not applicable
+
+Computer returned to owner:
+
+[ ] Yes
+[ ] No
+
+============================================================
+15. FINAL SAFETY CHECK
+============================================================
+
+[ ] No unauthorized changes made
+[ ] No passwords bypassed
+[ ] No security controls bypassed
+[ ] No unnecessary private data copied
+[ ] Source data preserved where appropriate
+[ ] Recovery destination verified
+[ ] Important recovered files checked
+[ ] Documentation completed
+
+============================================================
+FINAL STATUS
+============================================================
+
+[ ] RESOLVED
+[ ] PARTIALLY RESOLVED
+[ ] DATA RECOVERY REQUIRED
+[ ] HARDWARE SERVICE REQUIRED
+[ ] FURTHER DIAGNOSIS REQUIRED
+[ ] STOPPED FOR SAFETY
+
+Notes:
+
+____________________________________________________________
+
+____________________________________________________________
+
+____________________________________________________________
+
+============================================================
+END OF WORKSHEET
+============================================================

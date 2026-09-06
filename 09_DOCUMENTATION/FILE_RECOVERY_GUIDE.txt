@@ -1,0 +1,160 @@
+============================================================
+COMPUTER TOOLKIT — FILE RECOVERY GUIDE
+============================================================
+
+PURPOSE
+-------
+Recover or preserve important data while minimizing the chance
+of making the original situation worse.
+
+CORE RULE
+---------
+STOP -> IDENTIFY -> PRESERVE -> RECOVER -> VERIFY
+
+============================================================
+BEFORE RECOVERY
+============================================================
+
+1. Ask the owner what files are missing or inaccessible.
+2. Get permission to access the affected computer/data.
+3. Identify the PHYSICAL SOURCE DRIVE.
+4. Identify a SEPARATE DESTINATION.
+5. Confirm the destination has enough free space.
+6. Stop unnecessary activity on the affected drive.
+
+NEVER GUESS WHICH DISK IS THE SOURCE.
+
+Drive letters can change.
+
+============================================================
+IF THE DRIVE IS FAILING
+============================================================
+
+Warning signs include:
+
+- repeated I/O errors
+- files becoming inaccessible
+- drive disappearing and reappearing
+- extremely slow reads
+- unusual clicking or mechanical noises
+- filesystem errors combined with hardware symptoms
+
+If physical failure is suspected:
+
+DO NOT repeatedly run filesystem repair.
+
+DO NOT keep opening files unnecessarily.
+
+DO NOT install recovery software onto the affected drive.
+
+DO NOT save recovered files onto the affected drive.
+
+Consider creating an image of the source drive first.
+
+============================================================
+TESTDISK / PHOTOREC
+============================================================
+
+Location:
+
+04_FILE_RECOVERY\TESTDISK_PHOTOREC
+
+Available programs include:
+
+testdisk_win.exe
+photorec_win.exe
+qphotorec_win.exe
+fidentify_win.exe
+
+IMPORTANT:
+
+TestDisk can perform operations that change disk structures.
+
+Treat partition-table and filesystem modifications as RED.
+
+PhotoRec is designed to recover files and should write recovered
+files to a DIFFERENT destination.
+
+============================================================
+RECOVERY DESTINATION
+============================================================
+
+SOURCE:
+The drive containing the original data.
+
+DESTINATION:
+A separate drive used to store recovered data.
+
+Never confuse the two.
+
+Example:
+
+SOURCE      = Disk 0 / Windows SSD
+DESTINATION = External recovery drive
+
+The destination must be deliberately identified before recovery.
+
+============================================================
+RECOVERY PRIORITY
+============================================================
+
+If the data is extremely important:
+
+1. Stop using the affected drive.
+2. Preserve the drive.
+3. Consider imaging it.
+4. Perform recovery against the image where practical.
+5. Save recovered data elsewhere.
+6. Verify recovered files.
+
+============================================================
+DELETED FILES
+============================================================
+
+When a file is deleted, continued use of the storage device can
+overwrite the space that previously contained the file.
+
+Therefore:
+
+STOP unnecessary writes.
+
+Do not install software onto the affected drive.
+
+Do not download recovered files onto the affected drive.
+
+============================================================
+VERIFICATION
+============================================================
+
+After recovery:
+
+- Open important recovered files.
+- Check file sizes.
+- Check photos/videos/documents for corruption.
+- Compare recovered files with known originals when possible.
+- Keep the original source unchanged until recovery is confirmed.
+
+============================================================
+RED FLAGS
+============================================================
+
+STOP if:
+
+- You cannot identify the source drive.
+- You cannot identify the destination drive.
+- The destination may contain important existing data.
+- The drive is physically failing.
+- The recovery tool proposes formatting.
+- The recovery tool proposes deleting partitions.
+- You are unsure what an operation will change.
+
+============================================================
+WHEN IN DOUBT
+============================================================
+
+STOP.
+
+Preserving the original evidence/data is more important than
+trying random repair operations.
+
+============================================================

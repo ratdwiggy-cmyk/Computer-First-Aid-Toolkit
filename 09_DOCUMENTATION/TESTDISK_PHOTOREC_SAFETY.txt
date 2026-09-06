@@ -1,0 +1,107 @@
+TESTDISK / PHOTOREC — RECOVERY SAFETY
+=====================================
+
+LOCATION
+--------
+This folder contains the portable TestDisk / PhotoRec recovery tools.
+
+CURRENT VERSION
+---------------
+7.3-WIP Windows 64-bit
+
+IMPORTANT
+---------
+These are DATA RECOVERY tools, not ordinary diagnostic utilities.
+
+NORMAL RULE
+-----------
+NEVER experiment with TestDisk or PhotoRec on someone's only copy
+of important data.
+
+SOURCE VS DESTINATION
+---------------------
+SOURCE = the drive/device containing the data you are trying to recover.
+
+DESTINATION = a DIFFERENT drive/device where recovered files will be saved.
+
+Never confuse these two.
+
+PHOTORec
+--------
+PhotoRec is primarily a file recovery tool.
+
+Recovered files MUST be written to a different storage device
+whenever practical.
+
+Do NOT save recovered files back onto the damaged/source drive.
+
+TESTDISK
+--------
+TestDisk can perform operations involving partitions, boot sectors,
+and filesystems.
+
+Some operations can CHANGE the source disk.
+
+Treat potentially modifying operations as RED unless the operation
+has been specifically identified, understood, and authorized.
+
+FIRST RESPONSE TO DATA LOSS
+---------------------------
+1. Stop unnecessary use of the affected drive.
+2. Do not install recovery software onto the affected drive.
+3. Do not save recovered files onto the affected drive.
+4. Identify the affected physical disk.
+5. Identify a separate destination with enough free space.
+6. If the drive is physically failing or producing I/O errors,
+   consider creating an image before attempting filesystem repair.
+7. Document what is known before changing anything.
+
+FAILING DRIVE
+-------------
+If a drive is making unusual noises, disconnecting, disappearing,
+or producing repeated I/O errors:
+
+STOP.
+
+Do not repeatedly run filesystem repair tools against it.
+
+A failing drive may require an imaging/recovery procedure.
+
+WRONG-DRIVE PROTECTION
+----------------------
+Before any recovery operation, verify:
+
+SOURCE:
+Physical disk:
+Model:
+Capacity:
+Partition:
+Filesystem:
+
+DESTINATION:
+Physical disk:
+Model:
+Capacity:
+Available space:
+
+Never identify a drive only by its drive letter.
+
+USB TOOLKIT WARNING
+-------------------
+This USB contains the recovery tools AND the toolkit itself.
+
+Do not assume the USB is a suitable recovery destination.
+
+There may not be enough free space.
+
+Never overwrite the toolkit USB with recovered data.
+
+GENERAL RULE
+------------
+If you cannot clearly identify the source and destination:
+
+STOP.
+
+Do not guess.
+
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> RECOVER

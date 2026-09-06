@@ -1,0 +1,87 @@
+SYSINTERNALS TOOLKIT — APPROVED USE
+===================================
+
+GREEN — NORMAL INSPECTION
+-------------------------
+Process Explorer
+  File: procexp64.exe
+  Purpose: Inspect running processes, CPU, memory, handles and loaded modules.
+
+Autoruns
+  File: Autoruns64.exe
+  Purpose: Inspect programs configured to start automatically.
+
+Process Monitor
+  File: Procmon64.exe
+  Purpose: Detailed investigation of filesystem, registry and process activity.
+
+TCPView
+  File: tcpview64.exe
+  Purpose: Inspect active network connections and listening ports.
+
+RAMMap
+  File: RAMMap64.exe
+  Purpose: Investigate Windows physical memory usage.
+
+Sigcheck
+  File: sigcheck64.exe
+  Purpose: Inspect file versions, hashes and digital signatures.
+
+
+YELLOW — ADVANCED / USE WITH CARE
+---------------------------------
+Handle
+  File: handle64.exe
+  Purpose: Find which processes have files or other objects open.
+
+ListDLLs
+  File: Listdlls64.exe
+  Purpose: Inspect DLLs loaded by processes.
+
+PsInfo
+  File: PsInfo64.exe
+  Purpose: Collect detailed Windows system information.
+
+Coreinfo
+  File: Coreinfo64.exe
+  Purpose: Inspect processor capabilities.
+
+Disk2vhd
+  File: disk2vhd64.exe
+  Purpose: Create a virtual disk image of physical/volumes.
+  WARNING: Imaging can require substantial storage and careful selection.
+
+
+RED / RESTRICTED — DO NOT USE CASUALLY
+--------------------------------------
+Autologon
+PsExec
+PsPasswd
+PsShutdown
+SDelete
+Volumeid
+NotMyFault
+Sysmon installation/configuration
+Ctrl2Cap
+MoveFile
+RegDelNull
+Junction
+Any tool that changes, deletes, overwrites, disables or installs something
+
+These tools may modify the computer, affect security, or permanently
+change data.
+
+DO NOT USE THEM AS PART OF THE NORMAL NOVICE WORKFLOW.
+
+GENERAL RULE
+------------
+A trusted tool can still perform a dangerous operation.
+
+Before using any non-GREEN tool:
+1. Identify exactly what it does.
+2. Identify what computer/drive/object it will affect.
+3. Confirm the owner has authorized the operation.
+4. Determine whether the operation can be reversed.
+5. Preserve important data first when appropriate.
+
+If unsure: STOP.

@@ -1,0 +1,201 @@
+============================================================
+COMPUTER TOOLKIT — RELEASE MANIFEST
+============================================================
+
+Purpose:
+Portable, safety-first computer diagnosis, data preservation,
+recovery, and repair toolkit.
+
+Design principle:
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> REPAIR
+
+============================================================
+CORE AREAS
+============================================================
+
+01_SYSTEM_INFO
+    Windows system and hardware identification.
+
+02_HARDWARE_DIAGNOSTICS
+    Storage, memory, GPU, network, battery, and device checks.
+
+03_NETWORK
+    Network troubleshooting and basic diagnostics.
+
+04_FILE_RECOVERY
+    TestDisk / PhotoRec recovery tools.
+
+05_WINDOWS_REPAIR
+    Read-only Windows repair assessment.
+
+06_BACKUP
+    Safe file preservation and backup workflow.
+
+07_SECURITY_CHECKS
+    Read-only security assessment.
+
+08_PORTABLE_TOOLS
+    Approved portable diagnostic utilities.
+
+09_DOCUMENTATION
+    Safety rules, workflows, guides, checklists, and indexes.
+
+10_SCRIPTS
+    Session management, report collection, and toolkit utilities.
+
+SESSIONS
+    Per-computer diagnostic session records.
+
+============================================================
+APPROVED PORTABLE TOOLING
+============================================================
+
+Microsoft Sysinternals:
+    Process Explorer
+    Autoruns
+    Process Monitor
+    TCPView
+    RAMMap
+    Sigcheck
+
+CGSecurity:
+    TestDisk
+    PhotoRec
+    QPhotoRec
+    FIdentify
+
+Advanced:
+    GNU ddrescue
+    SystemRescue
+    GParted
+
+Advanced tools are not part of the novice repair workflow.
+
+============================================================
+SAFETY MODEL
+============================================================
+
+GREEN
+    Read-only inspection and diagnostics.
+
+YELLOW
+    Operations requiring confirmation and care.
+
+RED
+    Potentially destructive or security-sensitive operations.
+
+The toolkit does not intentionally provide workflows for:
+
+    Password bypass
+    BitLocker bypass
+    Administrator bypass
+    BIOS/UEFI bypass
+    Security-software disabling
+    Unauthorized file access
+    Unauthorized software installation
+    Drive formatting
+    Unnecessary partition deletion
+    Destructive disk operations
+
+============================================================
+PRIMARY WORKFLOW
+============================================================
+
+1. Obtain permission.
+2. Understand the reported problem.
+3. Identify important data.
+4. Determine backup status.
+5. Identify the operating system.
+6. Identify physical storage.
+7. Run read-only diagnostics.
+8. Record findings.
+9. Preserve data if necessary.
+10. Confirm the diagnosis.
+11. Obtain approval for changes.
+12. Perform the smallest justified repair.
+13. Verify the result.
+14. Document the session.
+
+============================================================
+PORTABLE USB STORAGE
+============================================================
+
+The USB also contains:
+
+    STORAGE_HUB\PERSONAL
+    STORAGE_HUB\DOCUMENTS
+    STORAGE_HUB\DOWNLOADS
+    STORAGE_HUB\PHOTOS
+    STORAGE_HUB\TRANSFER
+    STORAGE_HUB\TEMPORARY
+
+The Linux Mint boot environment is separate from the
+general-purpose storage organization.
+
+Do not delete or rename Linux Mint boot files.
+
+If Windows asks to format the USB:
+
+    CANCEL.
+
+============================================================
+PRIVACY
+============================================================
+
+Do not store:
+
+    Passwords
+    Authentication codes
+    Browser sessions
+    Private credentials
+
+Do not copy another person's private files without permission.
+
+Session reports may contain identifying information about
+a computer and should be handled appropriately.
+
+============================================================
+CURRENT STATUS
+============================================================
+
+Toolkit structure:
+    Established
+
+Safety documentation:
+    Established
+
+Diagnostic scripts:
+    Established
+
+Session management:
+    Established
+
+Portable diagnostic tools:
+    Established
+
+Recovery tooling:
+    Established
+
+Operator checklist:
+    Established
+
+Toolkit self-check:
+    Established
+
+============================================================
+QUALITY CONTROL
+============================================================
+
+Before treating the toolkit as a finished release:
+
+    [ ] Run Toolkit Self-Check
+    [ ] Review any missing-file warnings
+    [ ] Confirm USB storage remains intact
+    [ ] Confirm Linux Mint still boots
+    [ ] Review documentation for contradictions
+    [ ] Confirm destructive tools remain clearly restricted
+    [ ] Perform a final safety review
+
+============================================================
+END OF RELEASE MANIFEST
+============================================================

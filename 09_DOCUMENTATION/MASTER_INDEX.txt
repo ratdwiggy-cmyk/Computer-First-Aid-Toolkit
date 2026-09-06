@@ -1,0 +1,387 @@
+============================================================
+COMPUTER TOOLKIT — MASTER INDEX
+============================================================
+
+PURPOSE
+-------
+Portable first-aid toolkit for legitimate computer diagnosis,
+data preservation, recovery, and repair.
+
+CORE WORKFLOW
+-------------
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> REPAIR
+
+============================================================
+01_SYSTEM_INFO
+============================================================
+
+Get-SystemInfo.ps1
+
+Purpose:
+Collect basic Windows computer information.
+
+Reports:
+Windows version
+Computer model
+CPU
+RAM
+Storage
+GPU
+Network adapters
+Battery
+Device errors
+
+Risk:
+GREEN — READ-ONLY
+
+============================================================
+02_HARDWARE_DIAGNOSTICS
+============================================================
+
+Get-StorageHealth.ps1
+Get-MemoryDiagnostics.ps1
+Get-GpuDiagnostics.ps1
+Get-NetworkDiagnostics.ps1
+Get-BatteryDiagnostics.ps1
+Get-DeviceErrors.ps1
+
+Purpose:
+Identify possible hardware, storage, device, and configuration
+problems without intentionally changing the computer.
+
+Risk:
+GREEN — READ-ONLY
+
+============================================================
+03_NETWORK
+============================================================
+
+Network-Triage.ps1
+
+Purpose:
+Determine where a network connection is failing.
+
+Checks:
+
+Computer/network adapter
+IP configuration
+Local TCP/IP
+Gateway
+DNS
+Internet connectivity
+
+Risk:
+GREEN — READ-ONLY
+
+============================================================
+04_FILE_RECOVERY
+============================================================
+
+TESTDISK_PHOTOREC
+
+Contains:
+
+TestDisk
+PhotoRec
+QPhotoRec
+FIdentify
+
+Purpose:
+Advanced file, partition, and filesystem recovery.
+
+Risk:
+YELLOW / RED
+
+IMPORTANT:
+Identify source and destination before recovery.
+
+Never write recovered files to the source drive.
+
+============================================================
+05_WINDOWS_REPAIR
+============================================================
+
+Windows-Repair-Assessment.ps1
+
+Purpose:
+Assess Windows system-file/component-store condition.
+
+Initial checks:
+
+DISM /CheckHealth
+SFC /verifyonly
+
+Risk:
+GREEN — ASSESSMENT ONLY
+
+Repair operations such as:
+
+DISM /RestoreHealth
+sfc /scannow
+
+are intentionally NOT automatic.
+
+See:
+
+WINDOWS_REPAIR_DECISION_GUIDE.txt
+
+============================================================
+06_BACKUP
+============================================================
+
+Safe-FileBackup.ps1
+
+Purpose:
+Perform an explicitly confirmed recursive file copy.
+
+Safety:
+- source is not deleted
+- source is not moved
+- destination must be deliberately selected
+- user must explicitly confirm
+
+See:
+
+BACKUP_PRESERVATION_GUIDE.txt
+
+Risk:
+YELLOW — DATA COPYING
+
+============================================================
+07_SECURITY_CHECKS
+============================================================
+
+Security-Assessment.ps1
+
+Purpose:
+Inspect Windows security state.
+
+Checks include:
+
+Antivirus
+Microsoft Defender
+Firewall
+Windows Update service
+TPM
+Security-related device errors
+
+Risk:
+GREEN — READ-ONLY
+
+Does NOT:
+
+Disable security
+Bypass passwords
+Bypass BitLocker
+Change firewall settings
+Remove malware
+Disable Defender
+
+============================================================
+08_PORTABLE_TOOLS
+============================================================
+
+SYSINTERNALS
+
+Approved diagnostic tools:
+
+Process Explorer
+Autoruns
+Process Monitor
+TCPView
+RAMMap
+Sigcheck
+
+Launcher:
+
+Run-Sysinternals.ps1
+
+Restricted Sysinternals tools are intentionally excluded from
+the normal launcher.
+
+============================================================
+09_DOCUMENTATION
+============================================================
+
+SAFETY_RULES.txt
+
+START_HERE.txt
+
+QUICK_TRIAGE.txt
+
+INCIDENT_WORKSHEET_TEMPLATE.txt
+
+HARDWARE_DIAGNOSTICS_WORKFLOW.txt
+
+FILE_RECOVERY_GUIDE.txt
+
+BACKUP_PRESERVATION_GUIDE.txt
+
+WINDOWS_REPAIR_DECISION_GUIDE.txt
+
+PORTABLE_TOOLS_INVENTORY.txt
+
+ADVANCED_TOOLS_GUIDE.txt
+
+SYSINTERNALS_APPROVED_USE.txt
+
+TESTDISK_PHOTOREC_SAFETY.txt
+
+Purpose:
+
+Provide offline instructions and safety procedures.
+
+============================================================
+10_SCRIPTS
+============================================================
+
+Reserved for reusable scripts that do not belong to one
+specific diagnostic category.
+
+============================================================
+MAIN LAUNCHER
+============================================================
+
+RUN_TOOLKIT.ps1
+
+Provides the main Windows diagnostic menu.
+
+Current safe functions include:
+
+System Information
+Storage Health
+Memory Diagnostics
+GPU Diagnostics
+Network Diagnostics
+Battery Diagnostics
+Device Errors
+Network Triage
+Windows Repair Assessment
+Security Assessment
+Safety Rules
+Start Here Guide
+Sysinternals Diagnostics
+
+============================================================
+SAFETY LEVELS
+============================================================
+
+GREEN
+------
+Read-only inspection.
+
+YELLOW
+-------
+Potentially changes configuration or copies data.
+
+STOP AND CONFIRM.
+
+RED
+---
+Potentially destructive.
+
+Do not use casually.
+
+Examples:
+
+Formatting
+Partition deletion
+Disk overwriting
+Filesystem modification
+Advanced recovery
+Windows reinstallation
+Security/access bypass
+
+============================================================
+IMPORTANT USB RULE
+============================================================
+
+This USB contains the Linux Mint boot environment.
+
+Do NOT:
+
+Format the USB
+Delete Linux Mint boot files
+Rename Linux Mint boot files
+Assume Windows can safely reformat the drive
+
+If Windows asks:
+
+"You need to format the disk before you can use it."
+
+Choose:
+
+CANCEL
+
+============================================================
+FINAL PRINCIPLE
+============================================================
+
+This toolkit is designed to help preserve computers,
+not take control of them.
+
+When uncertain:
+
+STOP.
+
+Record what you see.
+
+Identify the source and destination.
+
+Preserve important data.
+
+Then decide what to do.
+
+============================================================
+END OF MASTER INDEX
+============================================================
+
+============================================================
+OPERATOR CHECKLIST
+============================================================
+
+OPERATOR_CHECKLIST.txt
+
+Use this as the practical step-by-step checklist during a
+computer assistance session.
+
+Recommended workflow:
+
+OBSERVE
+  ->
+PRESERVE
+  ->
+DIAGNOSE
+  ->
+CONFIRM
+  ->
+REPAIR
+  ->
+VERIFY
+  ->
+DOCUMENT
+
+The checklist is intended to prevent accidental changes,
+unnecessary repairs, and loss of important data.
+
+============================================================
+SESSION TOOLS
+============================================================
+
+Start-NewSession.ps1
+
+Creates a dated session folder for keeping one computer's
+records separated from other computers.
+
+Collect-SessionReports.ps1
+
+Copies diagnostic reports into the selected session folder.
+Original reports are not deleted or moved.
+
+Test-Toolkit.ps1
+
+Checks that expected toolkit folders and core files exist.
+
+============================================================
+END OF ADDITION
+============================================================

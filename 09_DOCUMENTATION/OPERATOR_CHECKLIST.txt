@@ -1,0 +1,192 @@
+============================================================
+COMPUTER TOOLKIT — OPERATOR CHECKLIST
+============================================================
+
+USE THIS CHECKLIST WHEN HELPING WITH A COMPUTER PROBLEM.
+
+CORE RULE
+---------
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> REPAIR
+
+============================================================
+1. BEFORE INSPECTION
+============================================================
+
+[ ] Owner gave permission to inspect the computer
+[ ] Owner explained the problem
+[ ] Important files identified
+[ ] Backup status established
+[ ] Operating system identified
+[ ] Computer model identified
+
+If permission or important information is unclear:
+
+STOP.
+
+============================================================
+2. IDENTIFY STORAGE
+============================================================
+
+[ ] Physical disks identified
+[ ] Internal vs external drives identified
+[ ] Important data location identified
+[ ] Recovery destination identified if needed
+
+NEVER assume:
+
+C: = Disk 0
+D: = Disk 1
+
+Drive letters are not reliable physical-disk identifiers.
+
+============================================================
+3. READ-ONLY DIAGNOSTICS
+============================================================
+
+Run only the diagnostics relevant to the problem.
+
+[ ] System information
+[ ] Storage health
+[ ] Memory
+[ ] GPU/display
+[ ] Network
+[ ] Battery
+[ ] Device errors
+[ ] Network triage
+[ ] Windows repair assessment
+[ ] Security assessment
+
+Record results before making changes.
+
+============================================================
+4. CLASSIFY THE PROBLEM
+============================================================
+
+Possible categories:
+
+[ ] Hardware
+[ ] Storage
+[ ] Windows/system files
+[ ] Driver/device
+[ ] Network
+[ ] Battery/power
+[ ] Security
+[ ] User configuration
+[ ] Unknown
+
+Do not repair an unknown problem by guessing.
+
+============================================================
+5. PRESERVE DATA
+============================================================
+
+If important data may be at risk:
+
+[ ] Stop unnecessary use
+[ ] Identify source drive
+[ ] Identify destination
+[ ] Confirm destination has enough space
+[ ] Preserve important files where practical
+
+If the drive appears physically failing:
+
+[ ] Avoid repeated filesystem repair
+[ ] Consider imaging/recovery first
+
+============================================================
+6. DECIDE ON REPAIR
+============================================================
+
+Before changing anything:
+
+[ ] Problem is reasonably understood
+[ ] Data preservation considered
+[ ] Owner understands proposed change
+[ ] Correct source/destination identified
+[ ] Repair is appropriate
+
+If not:
+
+STOP.
+
+============================================================
+7. REPAIR
+============================================================
+
+Only perform the specific repair that has been justified.
+
+Examples:
+
+[ ] Windows system-file repair
+[ ] Filesystem repair
+[ ] Driver/configuration correction
+[ ] Network configuration correction
+[ ] Other documented repair
+
+Do NOT casually:
+
+[ ] Format drives
+[ ] Delete partitions
+[ ] Change partition tables
+[ ] Reinstall Windows
+[ ] Reset passwords
+[ ] Bypass BitLocker
+[ ] Disable security software
+[ ] Bypass administrator restrictions
+
+============================================================
+8. VERIFY
+============================================================
+
+After a repair:
+
+[ ] Re-test the original problem
+[ ] Confirm important files are accessible
+[ ] Confirm expected hardware is present
+[ ] Confirm network if relevant
+[ ] Confirm security protections remain enabled
+[ ] Record what changed
+
+============================================================
+9. FINISH THE SESSION
+============================================================
+
+[ ] Diagnostic reports collected
+[ ] Recovery/backup location documented
+[ ] Changes documented
+[ ] Temporary files reviewed
+[ ] Private information handled appropriately
+[ ] Accounts signed out
+[ ] Owner informed of results
+[ ] Computer returned to expected state
+
+============================================================
+RED FLAGS
+============================================================
+
+STOP AND INVESTIGATE FURTHER IF:
+
+- Drive repeatedly produces I/O errors
+- Drive disappears unexpectedly
+- Important files suddenly become inaccessible
+- Encryption/recovery key is requested
+- Unknown partition layout is encountered
+- Security software reports an active threat
+- Hardware overheats or shuts down
+- A repair tool proposes formatting or deleting data
+- You cannot identify the source or destination drive
+- You are unsure what a command will change
+
+============================================================
+FINAL RULE
+============================================================
+
+WHEN IN DOUBT:
+
+STOP.
+
+DO NOT GUESS.
+
+============================================================
+END
+============================================================

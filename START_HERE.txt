@@ -1,0 +1,194 @@
+============================================================
+COMPUTER TOOLKIT — START HERE
+============================================================
+
+PURPOSE
+-------
+This toolkit helps diagnose, preserve, and repair computers safely.
+
+CORE PRINCIPLE
+--------------
+OBSERVE -> PRESERVE -> DIAGNOSE -> CONFIRM -> REPAIR
+
+IMPORTANT
+---------
+The toolkit is designed to begin with read-only inspection.
+
+Do NOT:
+- format drives
+- delete partitions
+- reinstall Windows
+- reset passwords
+- bypass BitLocker
+- bypass administrator controls
+- disable security software
+- install random drivers
+- copy private files without permission
+- repair a filesystem before considering data preservation
+
+============================================================
+SAFETY LEVELS
+============================================================
+
+GREEN — READ-ONLY
+-----------------
+Generally safe for initial diagnosis.
+
+Examples:
+- System information
+- Storage identification
+- Storage health inspection
+- RAM information
+- GPU information
+- Network information
+- Device error inspection
+- Battery information
+- Reading logs
+
+YELLOW — STOP AND CONFIRM
+-------------------------
+May change the computer or affect its configuration.
+
+Examples:
+- Filesystem repair
+- Network configuration changes
+- Driver changes
+- Boot configuration changes
+- Permission changes
+- Installing software
+- Deleted-file recovery
+
+RED — POTENTIALLY DESTRUCTIVE
+-----------------------------
+Do not use casually.
+
+Examples:
+- Formatting
+- Partition deletion
+- Partition-table changes
+- Disk overwriting
+- Reinstallation
+- Password/security bypass
+- Encryption removal
+
+============================================================
+IF SOMEONE SAYS "MY COMPUTER IS BROKEN"
+============================================================
+
+1. Ask what happened.
+2. Ask whether important files are backed up.
+3. Ask permission before inspecting the computer.
+4. Record the operating system and computer model.
+5. Identify the physical storage devices.
+6. Run read-only diagnostics.
+7. Record the results.
+8. Preserve important data if necessary.
+9. Decide what problem has actually been identified.
+10. Only then consider repair.
+
+============================================================
+WINDOWS FIRST-AID
+============================================================
+
+01_SYSTEM_INFO
+---------------
+Get-SystemInfo.ps1
+
+Use this first to identify:
+- Windows version
+- computer model
+- CPU
+- RAM
+- storage
+- GPU
+- network adapters
+- battery
+- device errors
+
+02_HARDWARE_DIAGNOSTICS
+-----------------------
+Get-StorageHealth.ps1
+Get-MemoryDiagnostics.ps1
+Get-GpuDiagnostics.ps1
+Get-NetworkDiagnostics.ps1
+Get-BatteryDiagnostics.ps1
+Get-DeviceErrors.ps1
+
+These are intended for read-only inspection.
+
+============================================================
+STORAGE SAFETY
+============================================================
+
+ALWAYS identify the physical disk before recovery or repair.
+
+Do NOT assume:
+C: = Disk 0
+D: = Disk 1
+
+Drive letters can change.
+
+If important data may be endangered:
+
+PRESERVE DATA FIRST.
+
+If a drive is producing repeated I/O errors or appears physically
+unstable, do not repeatedly run filesystem repair tools against it.
+
+Consider imaging/recovery before repair.
+
+============================================================
+THIS USB
+============================================================
+
+This USB contains a bootable Linux Mint environment.
+
+The Linux Mint boot files must NOT be deleted or renamed.
+
+The storage area is:
+
+STORAGE_HUB
+
+Toolkit:
+
+STORAGE_HUB\COMPUTER_TOOLKIT
+
+Do not format the USB merely because Windows displays a
+"format this disk" message.
+
+============================================================
+PUBLIC OR SOMEONE ELSE'S COMPUTER
+============================================================
+
+Get permission.
+
+Respect:
+- privacy
+- organizational policies
+- security controls
+- administrator restrictions
+- endpoint security
+- network policies
+
+Do not bypass access controls.
+
+Do not install software without permission.
+
+Do not copy private files without authorization.
+
+When finished:
+- remove temporary personal files
+- sign out of accounts
+- return the computer to its previous state where practical
+
+============================================================
+WHEN IN DOUBT
+============================================================
+
+STOP.
+
+Do not guess.
+
+Record what you see and investigate before making a change.
+
+============================================================

@@ -1,0 +1,154 @@
+============================================================
+COMPUTER TOOLKIT — SESSION MANAGEMENT
+============================================================
+
+PURPOSE
+-------
+Keep diagnostic reports from different computers separated.
+
+CORE RULE
+---------
+ONE COMPUTER = ONE SESSION
+
+============================================================
+WHY SESSIONS MATTER
+============================================================
+
+Diagnostic reports may contain:
+
+- computer model
+- Windows information
+- storage identifiers
+- network information
+- device information
+- security configuration
+
+Do not mix reports from different computers.
+
+============================================================
+SESSION NAMING
+============================================================
+
+Use a simple date/time identifier.
+
+Recommended format:
+
+YYYY-MM-DD_HHMM
+
+Example:
+
+2026-09-04_1530
+
+If helping multiple computers on the same day, add a number:
+
+2026-09-04_1530_COMPUTER01
+
+============================================================
+SESSION FOLDER
+============================================================
+
+Recommended location:
+
+COMPUTER_TOOLKIT\SESSIONS
+
+Example:
+
+COMPUTER_TOOLKIT\SESSIONS\2026-09-04_1530_COMPUTER01
+
+Diagnostic reports for that computer should be kept together.
+
+============================================================
+SESSION START
+============================================================
+
+Record:
+
+Date
+Time
+Computer owner/organization
+Computer model
+Reported problem
+Permission status
+
+Then run the initial diagnostic tools.
+
+============================================================
+SESSION REPORTS
+============================================================
+
+Keep together:
+
+System information
+Storage health
+Memory diagnostics
+GPU diagnostics
+Network diagnostics
+Battery diagnostics
+Device errors
+Windows repair assessment
+Security assessment
+Network triage
+
+Also keep:
+
+Incident worksheet
+Relevant notes
+Backup/recovery records
+
+============================================================
+PRIVACY
+============================================================
+
+Diagnostic reports may contain information that should not be
+shared publicly.
+
+Do not upload reports to random websites.
+
+Do not leave another person's reports on a public computer.
+
+When the session is finished, determine whether the reports
+should be:
+
+[ ] Returned to the owner
+[ ] Retained with permission
+[ ] Securely deleted when no longer needed
+
+============================================================
+USB STORAGE
+============================================================
+
+The USB itself is portable.
+
+Treat diagnostic reports as potentially sensitive.
+
+Do not create unnecessary copies.
+
+Do not store passwords, authentication codes, browser sessions,
+or other credentials in the toolkit.
+
+============================================================
+SESSION COMPLETION
+============================================================
+
+Before finishing:
+
+[ ] Diagnostic reports collected
+[ ] Important data preserved if necessary
+[ ] Changes documented
+[ ] Recovery destination documented
+[ ] Temporary files reviewed
+[ ] Private information handled appropriately
+[ ] Owner informed of results
+
+============================================================
+IMPORTANT
+============================================================
+
+The toolkit should help create a record of what happened.
+
+It should NOT become a permanent collection of other people's
+private computer information.
+
+============================================================
+END
+============================================================

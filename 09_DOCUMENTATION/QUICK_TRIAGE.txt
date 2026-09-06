@@ -1,0 +1,269 @@
+============================================================
+COMPUTER TOOLKIT — QUICK TRIAGE
+============================================================
+
+WHEN SOMEONE SAYS:
+"My computer isn't working."
+
+DO NOT START REPAIRING IMMEDIATELY.
+
+============================================================
+STEP 1 — PERMISSION
+============================================================
+
+Ask the owner for permission to inspect the computer.
+
+If permission is not granted:
+
+STOP.
+
+============================================================
+STEP 2 — ASK WHAT HAPPENED
+============================================================
+
+Ask:
+
+What exactly is not working?
+
+When did it start?
+
+Did anything change immediately beforehand?
+
+Examples:
+
+- Update
+- New application
+- New hardware
+- Power failure
+- Drop/impact
+- Liquid exposure
+- Unexpected shutdown
+- Malware/security warning
+- Unknown
+
+Record the answer.
+
+============================================================
+STEP 3 — PROTECT IMPORTANT DATA
+============================================================
+
+Ask:
+
+"Are your important files backed up?"
+
+If:
+
+YES:
+Continue.
+
+NO:
+Consider preservation before repair.
+
+UNKNOWN:
+Treat important data as potentially at risk.
+
+If the drive appears to be failing:
+
+STOP unnecessary use.
+
+Do not repeatedly run repair operations.
+
+Consider imaging/recovery before filesystem repair.
+
+============================================================
+STEP 4 — IDENTIFY THE COMPUTER
+============================================================
+
+Record:
+
+Operating system
+Computer model
+CPU
+RAM
+Storage devices
+GPU
+Network adapters
+
+Use:
+
+01_SYSTEM_INFO\Get-SystemInfo.ps1
+
+============================================================
+STEP 5 — IDENTIFY STORAGE
+============================================================
+
+Identify the PHYSICAL disks.
+
+Record:
+
+Disk number
+Model
+Serial number
+Capacity
+Health/status
+
+Do NOT assume:
+
+C: = Disk 0
+
+Drive letters are not sufficient for recovery work.
+
+============================================================
+STEP 6 — RUN READ-ONLY DIAGNOSTICS
+============================================================
+
+Start with:
+
+[ ] System Information
+[ ] Storage Health
+[ ] Memory
+[ ] GPU
+[ ] Network
+[ ] Battery
+[ ] Device Errors
+
+Then use specialized diagnostics only when appropriate.
+
+============================================================
+STEP 7 — CLASSIFY THE PROBLEM
+============================================================
+
+HARDWARE?
+
+Examples:
+- storage warnings
+- memory errors
+- overheating
+- device failures
+- physical damage
+
+SOFTWARE?
+
+Examples:
+- Windows system-file problems
+- application crashes
+- configuration problems
+
+NETWORK?
+
+Examples:
+- no IP address
+- gateway failure
+- DNS failure
+- Internet unavailable
+
+DATA?
+
+Examples:
+- deleted files
+- inaccessible files
+- damaged filesystem
+- failing storage
+
+SECURITY?
+
+Examples:
+- unexpected security changes
+- suspicious processes
+- Defender/firewall problems
+
+UNKNOWN?
+
+That's acceptable.
+
+Do not guess.
+
+============================================================
+STEP 8 — PRESERVE
+============================================================
+
+If important data may be affected:
+
+PRESERVE FIRST.
+
+Possible actions:
+
+- targeted backup
+- verified file copy
+- drive imaging
+- recovery from an image
+
+Always identify:
+
+SOURCE
+DESTINATION
+
+============================================================
+STEP 9 — CONFIRM
+============================================================
+
+Before changing anything, answer:
+
+What problem are we fixing?
+
+What evidence supports this diagnosis?
+
+What exactly will change?
+
+Is the change authorized?
+
+Can it be reversed?
+
+If any answer is UNKNOWN:
+
+STOP.
+
+============================================================
+STEP 10 — REPAIR
+============================================================
+
+Only after diagnosis and preservation should repair begin.
+
+Examples:
+
+- Windows system-file repair
+- filesystem repair
+- configuration correction
+- approved driver change
+- approved application repair
+
+Repair operations require additional confirmation.
+
+============================================================
+RED FLAGS — STOP
+============================================================
+
+STOP immediately if:
+
+- the drive is making unusual physical noises
+- the drive repeatedly disconnects
+- I/O errors are increasing
+- important files are disappearing
+- you cannot identify the source drive
+- you cannot identify the destination
+- a tool wants to format a disk
+- a tool wants to delete a partition
+- you are asked to bypass a password
+- you are asked to bypass BitLocker
+- you are asked to disable security controls
+- you do not understand what an operation will change
+
+============================================================
+THE GOLDEN RULE
+============================================================
+
+OBSERVE
+   ->
+PRESERVE
+   ->
+DIAGNOSE
+   ->
+CONFIRM
+   ->
+REPAIR
+
+Never reverse this order simply because a repair tool is available.
+
+============================================================
+END
+============================================================

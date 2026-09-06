@@ -1,0 +1,224 @@
+============================================================
+COMPUTER TOOLKIT — WINDOWS REPAIR DECISION GUIDE
+============================================================
+
+PURPOSE
+-------
+Decide whether Windows system-file repair is appropriate.
+
+CORE RULE
+---------
+DIAGNOSE -> PRESERVE -> CONFIRM -> REPAIR -> VERIFY
+
+============================================================
+BEFORE REPAIR
+============================================================
+
+Confirm:
+
+[ ] The owner authorized the repair.
+[ ] The reported problem is understood.
+[ ] Important data has been considered/preserved.
+[ ] The correct Windows installation is being examined.
+[ ] The computer is stable enough to continue.
+[ ] The repair being considered matches the evidence.
+
+If any important item is UNKNOWN:
+
+STOP.
+
+============================================================
+SFC — SYSTEM FILE CHECKER
+============================================================
+
+Diagnostic command:
+
+sfc /verifyonly
+
+Purpose:
+
+Checks protected Windows system files without attempting repair.
+
+Repair command:
+
+sfc /scannow
+
+IMPORTANT:
+
+sfc /scannow can modify protected Windows system files.
+
+Do not run it simply because Windows is slow or because an unrelated
+problem exists.
+
+Use evidence from the diagnostic assessment first.
+
+============================================================
+DISM — COMPONENT STORE
+============================================================
+
+Diagnostic command:
+
+DISM /Online /Cleanup-Image /CheckHealth
+
+Purpose:
+
+Checks whether Windows has recorded component-store corruption.
+
+Repair command:
+
+DISM /Online /Cleanup-Image /RestoreHealth
+
+IMPORTANT:
+
+/RestoreHealth is a repair operation.
+
+It may modify the Windows component store.
+
+Do not include it in an automatic first-line troubleshooting script.
+
+============================================================
+RECOMMENDED ORDER
+============================================================
+
+1. Identify the reported Windows problem.
+
+2. Preserve important data where appropriate.
+
+3. Run:
+
+   DISM /Online /Cleanup-Image /CheckHealth
+
+4. Run:
+
+   sfc /verifyonly
+
+5. Record the results.
+
+6. Determine whether the evidence supports repair.
+
+7. Obtain confirmation before performing repair.
+
+8. Perform the appropriate repair.
+
+9. Restart if required.
+
+10. Re-test the original problem.
+
+============================================================
+IMPORTANT DISTINCTIONS
+============================================================
+
+A clean SFC result does NOT prove that Windows has no problems.
+
+A DISM health result does NOT prove that hardware is healthy.
+
+Windows system-file problems can coexist with:
+
+- failing storage
+- defective RAM
+- driver problems
+- application problems
+- network problems
+- malware/security issues
+- configuration problems
+
+Do not use SFC or DISM as a universal "fix everything" procedure.
+
+============================================================
+IF STORAGE MAY BE FAILING
+============================================================
+
+STOP.
+
+If the computer has:
+
+- repeated I/O errors
+- disappearing storage
+- severe read failures
+- physical drive symptoms
+- important files becoming inaccessible
+
+Prioritize data preservation and storage diagnosis.
+
+Do not repeatedly run filesystem or Windows repair operations
+against a potentially failing drive.
+
+============================================================
+IF WINDOWS WILL NOT BOOT
+============================================================
+
+Do not immediately reinstall Windows.
+
+First determine:
+
+- Are important files present?
+- Is the storage readable?
+- Is the Windows installation identifiable?
+- Is the problem likely hardware or software?
+- Is recovery data available?
+
+Preserve important data before destructive recovery actions whenever
+practical.
+
+============================================================
+REPAIR IS NOT THE SAME AS REINSTALLATION
+============================================================
+
+A Windows repair operation attempts to correct a specific problem.
+
+Reinstallation can:
+
+- remove applications
+- alter system configuration
+- remove files depending on the method
+- change partitions
+- require significant recovery work
+
+Never recommend reinstallation merely because Windows has an error.
+
+============================================================
+AFTER REPAIR
+============================================================
+
+Verify the original complaint.
+
+Examples:
+
+"Computer was crashing."
+
+-> Determine whether crashes continue.
+
+"Windows system files were corrupted."
+
+-> Re-run appropriate diagnostics.
+
+"Application would not start."
+
+-> Test that application.
+
+"Windows would not update."
+
+-> Test Windows Update again.
+
+The repair is not considered successful merely because the command
+completed.
+
+============================================================
+WHEN IN DOUBT
+============================================================
+
+STOP.
+
+Record:
+
+WHAT WAS FOUND
+WHAT WAS PRESERVED
+WHAT REPAIR IS PROPOSED
+WHAT THE REPAIR WILL CHANGE
+WHAT WAS AUTHORIZED
+
+Then proceed deliberately.
+
+============================================================
+END
+============================================================
